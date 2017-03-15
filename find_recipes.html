@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Поиск - Cook it!</title>
+
+<!-- Bootstrap -->
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+
+<!-- HTML5 shim and Respond.js for IE8 suspport of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+<header>
+  <nav class="navbar navbar-default menu" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle center-btn" data-toggle="collapse" data-target="#bs-navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        <a class="logo" href="#"><img src="img/logo_cook it2.png" height="75" width="105"></a> </div>
+      <div class="navbar-collapse collapse clear navbar-right center-nav" id="bs-navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li class="dropdown" style="font-weight: 700; color: #000;"> <a class="dropdown-toggle" href="index.html">главная</a></li>
+          <li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="recipes.html">рецепты</a>
+            <ul class="dropdown-menu recipes-drop">
+              <li><a href="#">Птица</a></li>
+              <li><a href="#">Рыба</a></li>
+              <li><a href="#">Мясо</a></li>
+              <li><a href="#">Быстрые</a></li>
+              <li><a href="#">Мультиварка</a></li>
+              <li><a href="#">Низкокалорийные</a></li>
+              <li><a href="#">Вегетарианские</a></li>
+              <li><a href="#">Праздник</a></li>
+              <li><a href="#">Выпечка</a></li>
+              <li><a href="recipe.html">Десерты и напитки</a></li>
+              <li><a href="video-recipe.html">Видео-рецепты</a></li>
+              <li><a href="find_recipes.html">Найти рецепт</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="product.html">продукты</a>
+            <ul class="dropdown-menu">
+              <li><a href="#">от А до Я</a></li>
+              <li><a href="#">Первая проба</a></li>
+              <li><a href="#">Как выбирать</a></li>
+              <li><a href="#">Как приготовить</a></li>
+              <li><a href="#">Полезные продукты</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="health.html">здоровье</a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Рецепты ПП</a></li>
+              <li><a href="#">Диеты</a></li>
+              <li><a href="#">Красота</a></li>
+              <li><a href="#">Фитнес</a></li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span
+                  class="glyphicon glyphicon-user"></span> <span class="caret"></span></a>
+            <ul class="dropdown-menu user">
+              <li>
+                <div class="login clearfix">
+                  <form name="login-form">
+                    <input class="login-focus" type="text" name="login" placeholder="Электронная почта">
+                    <input class="login-focus" type="password" name="password" placeholder="Пароль">
+                    <button class="btn account-btn" type="submit" name="login-form">Войти</button>
+                    <div class="form clearfix"> <a  href="#">Забыли пароль?</a> <a  href="#">Новая регистрация</a> </div>
+                    <div class="social-block">
+                      <ul>
+                        <li><a class="social-icon social-icon-f" href="#"><img src="img/facebook.png" width="30" height="30" alt=""/></a></li>
+                        <li><a class="social-icon social-icon-tw" href="#"><img src="img/tw.png" width="30" height="30" alt=""/></a></li>
+                        <li><a class="social-icon social-icon-ok" href="#"><img src="img/odnoklassniki.png" width="30" height="30" alt=""/></a></li>
+                        <li><a class="social-icon social-icon-vk" href="#"><img src="img/vk.png" width="30" height="30" alt=""/></a></li>
+                        <li><a class="social-icon social-icon-p" href="#"><img src="img/Pinterest.png" width="30" height="30" alt=""/></a></li>
+                      </ul>
+                    </div>
+                  </form>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span
+                  class="glyphicon glyphicon-search"></span> <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li class="search-drop">
+                <form>
+                  <input class="search-form" type="text" name="search" placeholder=" Что ищем?">
+                </form>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <!--/.nav-collapse -->
+    </div>
+    <!--/.container -->
+  </nav>
+</header>
+
+<div class="container">
+  <div class="row">
+    <ol class="breadcrumb">
+      <li><a href="#">Главная</a></li>
+      <li><a href="#">Рецепты</a></li>
+      <li class="active">Найти рецепт</li>
+    </ol>
+  </div>
+  <div class="row block-form">
+    <div class="col-md-6 col-md-offset-3 name-of-block">
+      <h1 class="text-center">Найти рецепт</h1>
+      <h2 class="text-center">34678 рецептов</h2>
+    </div>
+    <div class="col-md-4">
+      <div class="btn-group">
+        <p class="name-of-group"> Категория</p>
+        <button class="btn btn-default btn-lg dropdown-toggle find" type="button" data-toggle="dropdown"> Любая </button>
+        <ul class="dropdown-menu" style="left: 0 !important">
+          <li><a href="#">Любая</a></li>
+          <li><a href="#">Выпечка и десерты</a></li>
+          <li><a href="#">Основные блюда</a></li>
+          <li><a href="#">Завтраки</a></li>
+          <li><a href="#">Салаты</a></li>
+          <li><a href="#">Супы</a></li>
+          <li><a href="#">Паста и пицца</a></li>
+          <li><a href="#">Закуски</a></li>
+        </ul>
+      </div>
+      <div class="btn-group">
+        <p class="name-of-group">Кухня</p>
+        <button class="btn btn-default btn-lg dropdown-toggle find" type="button" data-toggle="dropdown"> Любая</button>
+        <ul class="dropdown-menu"  style="left: 0 !important">
+          <li><a href="#">Любая</a></li>
+          <li><a href="#">Китайская</a></li>
+          <li><a href="#">Мексиканская</a></li>
+          <li><a href="#">Индийская</a></li>
+          <li><a href="#">Французская</a></li>
+          <li><a href="#">Итальянская</a></li>
+          <li><a href="#">Грузинская</a></li>
+          <li><a href="#">Русская</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="btn-group">
+        <p class="name-of-group"> Подборки</p>
+        <button class="btn btn-default btn-lg dropdown-toggle find" type="button" data-toggle="dropdown"> Любая </button>
+        <ul class="dropdown-menu"  style="left: 0 !important">
+          <li>...</li>
+        </ul>
+      </div>
+      <div class="btn-group">
+        <p class="name-of-group"> Меню</p>
+        <button class="btn btn-default btn-lg dropdown-toggle find" type="button" data-toggle="dropdown"> Любая </button>
+        <ul class="dropdown-menu"  style="left: 0 !important">
+          <li><a href="#">Любое</a></li>
+          <li><a href="#">Детское</a></li>
+          <li><a href="#">Низко</a></li>
+          <li><a href="#">Постное</a></li>
+          <li><a href="#">Меню при диабете</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-md-4 block-product">
+      <button type="button" class="btn btn-default product "> Курица</button>
+      <button type="button" class="btn btn-default  product "> Говядина</button>
+      <button type="button" class="btn btn-default  product"> Вино </button>
+      <button type="button" class="btn btn-default  product"> Баранина</button>
+      <button type="button" class="btn btn-default  product">Молоко</button>
+      <button type="button" class="btn btn-default  product">Спагетти</button>
+      <button type="button" class="btn btn-default product ">Арахис</button>
+      <button type="button" class="btn btn-default product ">Яблоко</button>
+      <button type="button" class="btn btn-default  product">Креветки</button>
+    </div>
+    <div class="row">
+      <div class="col-md-12 search-btn ">
+        <button class="btn center-block btn-search"> Поиск </button>
+      </div>
+    </div>
+  </div>
+  <div class="row sort">
+    <div class="text-left col-md-12">
+      <div class="ad-link">Сортировать: <a class="link-sort" href="#"> По полулярности </a> <a class="link-sort" href="#"> По дате добавления </a>
+        <hr>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-6 col-md-4"> <a href="recipes.html">
+      <div class="thumbnail recipe">
+        <div class="icon-img">
+          <div  class="icon-play"><a href="video-recipe"></a></div>
+          <button type="button" class="btn btn-default type-food-video">десерт</button>
+        </div>
+        <img class="foto-recipe" src="img/j.oliver.jpg" alt="Шведские булочки с ягодами" width="360">
+        <div class="caption">
+          <h3>Шведские булочки с ягодами</h3>
+          <p>26 декабря 2016</p>
+        </div>
+      </div>
+      </a> </div>
+    <div class="col-sm-6 col-md-4"> <a href="recipes.html">
+      <div class="thumbnail recipe">
+        <div class="icon-img">
+          <button type="button" class="btn btn-default type-food">мультиварка</button>
+        </div>
+        <img  class="foto-recipe" src="img/befstroganov.jpg" alt="Бефстроганов из говядины" width="360" >
+        <div class="caption">
+          <h3>Бефстроганов из говядины</h3>
+          <p>18 декабря 2016</p>
+        </div>
+      </div>
+      </a> </div>
+    <div class="col-sm-6 col-md-4"> <a href="recipes.html">
+      <div class="thumbnail recipe">
+      <div class="icon-img">
+          <button type="button" class="btn btn-default type-food">мультиварка</button>
+        </div>
+         <img class="foto-recipe" src="img/pumpkin-soup.jpg" alt="Суп из тыквы из тыквы с яблоками" width="360">
+        <div class="caption">
+          <h3>Суп из тыквы из тыквы с яблоками </h3>
+          <p>16 декабря 2016</p>
+        </div>
+      </div>
+      </a> </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-6 col-md-4">
+      <div class="thumbnail recipe"> 
+      <div class="icon-img">
+          <button type="button" class="btn btn-default type-food">десерт</button>
+        </div> <img class="foto-recipe" src="img/fruit.jpg" alt="Фруктовая слойка" width="360">
+        <div class="caption">
+          <h3>Фруктовая слойка</h3>
+          <p>11 декабря 2016</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-4">
+      <div class="thumbnail recipe"> <div class="icon-img">
+          <button type="button" class="btn btn-default type-food">выпечка</button>
+        </div> <img class="foto-recipe" src="img/apple-pie.jpg" alt="Традиционный курник" width="360" >
+        <div class="caption">
+          <h3>Традиционный курник</h3>
+          <p>26 ноября 2016</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-4">
+      <div class="thumbnail recipe"><div class="icon-img">
+          <button type="button" class="btn btn-default type-food">праздник</button>
+        </div> <img class="foto-recipe" src="img/mini-pizza.jpg" alt="Мини-пицца для детского праздника" width="360">
+        <div class="caption">
+          <h3>Мини-пицца для детского праздника</h3>
+          <p>15 октября 2016</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-6 col-md-4">
+      <div class="thumbnail recipe">
+      <div class="icon-img">
+          <button type="button" class="btn btn-default type-food">салаты</button>
+        </div>
+         <img class="foto-recipe" src="img/color-of-summer.jpg" alt="Салат «Краски лета»" width="360">
+        <div class="caption">
+          <h3>Салат «Краски лета»</h3>
+          <p>10 октября 2016</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-4">
+      <div class="thumbnail recipe">
+       <div class="icon-img">
+          <button type="button" class="btn btn-default type-food">рыба</button>
+        </div> <img class="foto-recipe" src="img/salmon.jpg" alt="Запеченный лосось" width="360" >
+        <div class="caption">
+          <h3>Запеченный лосось</h3>
+          <p>18 декабря 2016</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-4">
+      <div class="thumbnail recipe"> 
+       <div class="icon-img">
+          <button type="button" class="btn btn-default type-food">рыба</button>
+        </div> <img class="foto-recipe" src="img/shrimp.jpg" alt="Креветки с овощами" width="360">
+        <div class="caption">
+          <h3>Креветки с овощами </h3>
+          <p>16 декабря 2016</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-6 col-md-4">
+      <div class="thumbnail recipe">         <div class="icon-img">
+          <div  class="icon-play"><a href="video-recipe"></a></div>
+          <button type="button" class="btn btn-default type-food-video">рыба</button>
+        </div> <img class="foto-recipe" src="img/fish-video.jpg" alt="Рыба и морепродукты по-китайски" width="360">
+        <div class="caption">
+          <h3>Рыба и морепродукты по-китайски</h3>
+          <p>12 сентября 2016</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-4">
+      <div class="thumbnail recipe"> <div class="icon-img">
+          <button type="button" class="btn btn-default type-food">мясо</button>
+        </div> <img class="foto-recipe" src="img/ragu-sosisci.jpg" alt="Рагу из сосисок, шампиньонов и оливок" width="360" >
+        <div class="caption">
+          <h3>Рагу из сосисок, шампиньонов и оливок</h3>
+          <p>1 сентября 2016</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-4">
+      <div class="thumbnail recipe"> <div class="icon-img">
+          <button type="button" class="btn btn-default type-food">низкокалорийное</button>
+        </div> <img class="foto-recipe" src="img/brokkoli.jpg" alt="Крем-суп из брокколи" width="360">
+        <div class="caption">
+          <h3>Крем-суп из брокколи</h3>
+          <p>16 декабря 2016</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-6 col-md-4">
+      <div class="thumbnail recipe"> <div class="icon-img">
+          <button type="button" class="btn btn-default type-food">десерт</button>
+        </div>  <img class="foto-recipe" src="img/cake.jpg" alt="Пончики с глазурью" width="360">
+        <div class="caption">
+          <h3>Пончики с глазурью</h3>
+          <p>15 сентября 2016</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-4">
+      <div class="thumbnail recipe"> <div class="icon-img">
+          <button type="button" class="btn btn-default type-food">десерт</button>
+        </div> <img class="foto-recipe" src="img/ice-cream.jpg" alt="Йогуртовое мороженое" width="360" >
+        <div class="caption">
+          <h3>Йогуртовое мороженое</h3>
+          <p>1 сентября 2016</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-4">
+      <div class="thumbnail recipe"> <div class="icon-img">
+          <button type="button" class="btn btn-default type-food">вегетарианское</button>
+        </div> <img class="foto-recipe" src="img/soup.jpg" alt="Турецкий суп" width="360">
+        <div class="caption">
+          <h3>Турецкий суп</h3>
+          <p>15 октября 2016</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4 col-md-offset-4">
+      <ul class="pagination main">
+        <li class="disabled"><a href="#">«</a></li>
+        <li class="active"><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li><a href="#">»</a></li>
+      </ul>
+    </div>
+  </div>
+  <footer>
+    <div class="container">
+      <div class="col-sm-6 col-md-4">
+        <div class="footer-logo">
+          <img src="img/logo_cook%20it2.png" alt="">
+        </div>
+        <div class="f-text">
+          <p>Здесь вы найдете множество новых кулинарных идей, станете автором собственной Кулинарной книги, встретите друзей-единомышленников и сможете поболтать обо всемна свете!</p>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4 middle-box">
+        <div class="f-nav">
+          <a href="index.html">ГЛАВНАЯ</a>
+          <a href="recipes.html">РЕЦЕПТЫ</a>
+          <a href="product.html">ПРОДУКТЫ</a>
+          <a href="health.html">ЗДОРОВЬЕ</a>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <div class="f-text-block">
+          Вы можете отправить нам письмо и следить за обновлениями в социальных ресурсах:
+
+          <div class="social-block">
+            <ul>
+              <li><a class="social-icon social-icon-f" href="#"><img src="img/facebook.png" width="30"
+                                                                     height="30" alt=""/></a></li>
+              <li><a class="social-icon social-icon-tw" href="#"><img src="img/tw.png" width="30" height="30"
+                                                                      alt=""/></a></li>
+              <li><a class="social-icon social-icon-ok" href="#"><img src="img/odnoklassniki.png" width="30"
+                                                                      height="30" alt=""/></a></li>
+              <li><a class="social-icon social-icon-vk" href="#"><img src="img/vk.png" width="30" height="30"
+                                                                      alt=""/></a></li>
+              <li><a class="social-icon social-icon-p" href="#"><img src="img/Pinterest.png" width="30"
+                                                                     height="30" alt=""/></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <span class="rights">© 2003–2016  «Cook it!» —все права защищены</span>
+  </footer>
+<!--&lt;!&ndash; jQuery (necessary for Bootstrap's JavaScript plugins) &ndash;&gt; -->
+<script src="js/jquery-1.11.3.min.js"></script> 
+
+<!--&lt;!&ndash; Include all compiled plugins (below), or include individual files as needed &ndash;&gt; -->
+<script src="js/bootstrap.js"></script>
+</body>
+</html>

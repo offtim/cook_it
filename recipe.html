@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Рецепт-Cook it!</title>
+
+<!-- Bootstrap -->
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+
+<!-- HTML5 shim and Respond.js for IE8 suspport of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<header>
+  <nav class="navbar navbar-default menu" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle center-btn" data-toggle="collapse" data-target="#bs-navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        <a class="logo" href="#"><img src="img/logo_cook it2.png" height="75" width="105"></a> </div>
+      <div class="navbar-collapse collapse clear navbar-right center-nav" id="bs-navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li class="dropdown" style="font-weight: 700; color: #000;"> <a class="dropdown-toggle" href="index.html">главная</a></li>
+          <li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="recipes.html">рецепты</a>
+            <ul class="dropdown-menu recipes-drop">
+              <li><a href="#">Птица</a></li>
+              <li><a href="#">Рыба</a></li>
+              <li><a href="#">Мясо</a></li>
+              <li><a href="#">Быстрые</a></li>
+              <li><a href="#">Мультиварка</a></li>
+              <li><a href="#">Низкокалорийные</a></li>
+              <li><a href="#">Вегетарианские</a></li>
+              <li><a href="#">Праздник</a></li>
+              <li><a href="#">Выпечка</a></li>
+              <li><a href="recipe.html">Десерты и напитки</a></li>
+              <li><a href="video-recipe.html">Видео-рецепты</a></li>
+              <li><a href="find_recipes.html">Найти рецепт</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="product.html">продукты</a>
+            <ul class="dropdown-menu">
+              <li><a href="#">от А до Я</a></li>
+              <li><a href="#">Первая проба</a></li>
+              <li><a href="#">Как выбирать</a></li>
+              <li><a href="#">Как приготовить</a></li>
+              <li><a href="#">Полезные продукты</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="health.html">здоровье</a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Рецепты ПП</a></li>
+              <li><a href="#">Диеты</a></li>
+              <li><a href="#">Красота</a></li>
+              <li><a href="#">Фитнес</a></li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span
+                  class="glyphicon glyphicon-user"></span> <span class="caret"></span></a>
+            <ul class="dropdown-menu user">
+              <li>
+                <div class="login clearfix">
+                  <form name="login-form">
+                    <input class="login-focus" type="text" name="login" placeholder="Электронная почта">
+                    <input class="login-focus" type="password" name="password" placeholder="Пароль">
+                    <button class="btn account-btn" type="submit" name="login-form">Войти</button>
+                    <div class="form clearfix"> <a  href="#">Забыли пароль?</a> <a  href="#">Новая регистрация</a> </div>
+                    <div class="social-block">
+                      <ul>
+                        <li><a class="social-icon social-icon-f" href="#"><img src="img/facebook.png" width="30" height="30" alt=""/></a></li>
+                        <li><a class="social-icon social-icon-tw" href="#"><img src="img/tw.png" width="30" height="30" alt=""/></a></li>
+                        <li><a class="social-icon social-icon-ok" href="#"><img src="img/odnoklassniki.png" width="30" height="30" alt=""/></a></li>
+                        <li><a class="social-icon social-icon-vk" href="#"><img src="img/vk.png" width="30" height="30" alt=""/></a></li>
+                        <li><a class="social-icon social-icon-p" href="#"><img src="img/Pinterest.png" width="30" height="30" alt=""/></a></li>
+                      </ul>
+                    </div>
+                  </form>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span
+                  class="glyphicon glyphicon-search"></span> <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li class="search-drop">
+                <form>
+                  <input class="search-form" type="text" name="search" placeholder=" Что ищем?">
+                </form>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <!--/.nav-collapse -->
+    </div>
+    <!--/.container -->
+  </nav>
+</header>
+
+<div class="big-img"> <img src="img/big-img.png" alt=""/></div>
+<div class="container">
+  <div class="row">
+    <ol class="breadcrumb">
+      <li><a href="#">Главная</a></li>
+      <li><a href="#">Рецепты</a></li>
+      <li class="active">Клубнично-сливочный торт</li>
+    </ol>
+  </div>
+  <div class="row row-recipe">
+    
+    <div class="col-sm-4 blog-sidebar">
+      <div class="sidebar-module ingredient">
+  <h2>Ингредиенты</h2>
+          <span class="type-ingredient">Для основы</span>
+          <form action="">
+            <p>
+              <input type="checkbox"  name="a" value="песочное тесто">
+              песочное печенье  300 г</p>
+            <p>
+              <input type="checkbox"  name="a" value="сливочное масло">
+              сливочное масло  80 г</p>
+          </form>
+          <span class="type-ingredient">Для начинки</span>
+          <form>
+            <p>
+              <input type="checkbox"  name="a" value="сыр сливочный">
+              сыр сливочный 500 г</p>
+            <p>
+              <input type="checkbox"  name="a" value="сливки 33-35%">
+              сливки 33-35% 200 мл</p>
+            <p>
+              <input type="checkbox"   name="a" value="сахар">
+              сахар 150 г</p>
+            <p>
+              <input type="checkbox"  name="a" value="свежая клубника">
+              свежая клубника 400 г</p>
+            <p>
+              <input type="checkbox"   name="a" value="желатин">
+              желатин 18 г</p>
+          </form>
+          <span class="type-ingredient">Для желе</span>
+          <form class="last-child">
+            <p>
+              <input type="checkbox"  name="a" value="клубничный сок">
+              клубничный сок 250 мл</p>
+            <p>
+              <input type="checkbox"  name="a" value="желатин">
+              желатин 10 г</p>
+          </form>
+          <button class="btn center-block btn-search">Выделить все</button>
+      </div>
+      <div class="online-shop">
+  <div class="sidebar-module content-online-shop">
+    <h3>КУПИТЬ ПРОДУКТЫ</h3>
+    <p>Приобрести ингредиенты онлайн в вашем магазине</p>
+    <div class="btn-group">
+      <button type="button" class="btn btn-default shop" data-toggle="dropdown"><img src="img/ok-logo.png" width="60" alt="магазин О'кей"/></button>
+      <ul class="dropdown-menu shop-menu" role="menu">
+        <li><a href="#"><img src="img/logo-azbuka.svg" width="60" alt="Азбука"/></a></li>
+        <li><a href="#"><img src="img/logo-land.jpg" width="60"  alt="Лэнд"/></a></li>
+        <li><a href="#">...</a></li>
+        </ul>
+      <div class="change-shop"><a href="#">другой магазин</a></div>
+      </div>
+      
+  </div>
+      </div>
+      </div>
+        
+            <div class="col-sm-8 blog-main">
+      <div class="thumbnail title-recipe">
+        <h2>Клубнично-сливочный торт</h2>
+        <p class="text-title-recipe">Этот чизкейк готовиться легко и быстро. Он не требует выпечки, а некоторые элементы декора этого торта сделают его более праздничным и весенним.</p>
+        <div class="row">
+          <div class="col-md-6 small-img">  </div>
+          <div class="col-md-6 recipe-info">
+          <ul><li class="recipe-icon icon-time"><p>2 часа</p></li>
+          <li class="recipe-icon icon-portion"><p>6 персон</p></li>
+          <li class="recipe-icon icon-level"><p>средне</p></li>
+          </ul>
+          </div>
+          <div class="col-md-6 tag">
+               <a class="active-tag" href="#">фруктовый десерт</a>
+      <a href="#">вегетарианское</a>
+      <a href="#">торт</a>
+      </div>
+      <div class="col-md-6 img-table">
+          <img src="img/table.png" width="283" height="66" alt=""/> </div>
+          
+        </div>
+        <p class="text-title-recipe"> 1. Растапливаем сливочное масло и перемешиваем с бисквитной крошкой (можно взять печенье). В форму (16 см в диаметре) выкладываем крошку и плотно утрамбовываем ее стаканом или ложкой. Отправляем в холодильник.</p>
+        <p class="text-title-recipe">2. Желатин заливаем водой. Часть сливок доводим до горячего состояния и растворяем в них желатин. Немного остужаем. </p>
+        <p class="text-title-recipe"> 3. Остальную часть сливок взбиваем с сахарной пудрой. Сливочный сыр (маскарпоне, рикотта, violette, hochland и другие) растираем до гладкости вместе с творогом. Добавляем взбитые сливки, ванильный экстракт и сливки с желатином. Все перемешиваем до однородного состояния. </p>
+        <p class="text-title-recipe"> 4. Клубнику режем вдоль пополам. Нескольшо штук оставляем для украшения. В форму-кольцо вкладываем пленку или бумагу по кругу, и выкладываем клубнику. </p>
+        <p class="text-title-recipe">5. Наполняем форму с клубникой кремом (удобно это делать с помощью кондитеского мешка) и разравниваем поверхность.</p>
+        <p class="text-title-recipe">6. Отправляем чизкейк в холодильник на пару часов (лучше на ночь). После того, как чизкейк охладился, снимаем кольцо и пленку.</p>
+        <hr class="title-product">
+        <div class="row">
+          <div class=" col-xs-6 col-md-4 social-block"> <span>Поделись рецептом или сохрани на будущее</span>
+            <ul>
+              <li><a class="social-icon social-icon-f" href="#"><img src="img/facebook.png" width="30" height="30" alt=""/></a></li>
+              <li><a class="social-icon social-icon-tw" href="#"><img src="img/tw.png" width="30" height="30" alt=""/></a></li>
+              <li><a class="social-icon social-icon-ok" href="#"><img src="img/odnoklassniki.png" width="30" height="30" alt=""/></a></li>
+              <li><a class="social-icon social-icon-vk" href="#"><img src="img/vk.png" width="30" height="30" alt=""/></a></li>
+              <li><a class="social-icon social-icon-p" href="#"><img src="img/Pinterest.png" width="30" height="30" alt=""/></a></li>
+            </ul>
+          </div>
+          <div class="col-xs-6 col-md-4 search-btn ">
+            <button class="btn  btn-search">Распечатать рецепт </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="row">
+    
+    </div>
+      
+
+
+    
+  
+</div>
+<footer>
+  <div class="container">
+    <div class="col-sm-6 col-md-4">
+      <div class="footer-logo">
+        <img src="img/logo_cook%20it2.png" alt="">
+      </div>
+      <div class="f-text">
+        <p>Здесь вы найдете множество новых кулинарных идей, станете автором собственной Кулинарной книги, встретите друзей-единомышленников и сможете поболтать обо всемна свете!</p>
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-4 middle-box">
+      <div class="f-nav">
+        <a href="index.html">ГЛАВНАЯ</a>
+        <a href="recipes.html">РЕЦЕПТЫ</a>
+        <a href="product.html">ПРОДУКТЫ</a>
+        <a href="health.html">ЗДОРОВЬЕ</a>
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-4">
+      <div class="f-text-block">
+        Вы можете отправить нам письмо и следить за обновлениями в социальных ресурсах:
+
+        <div class="social-block">
+          <ul>
+            <li><a class="social-icon social-icon-f" href="#"><img src="img/facebook.png" width="30"
+                                                                   height="30" alt=""/></a></li>
+            <li><a class="social-icon social-icon-tw" href="#"><img src="img/tw.png" width="30" height="30"
+                                                                    alt=""/></a></li>
+            <li><a class="social-icon social-icon-ok" href="#"><img src="img/odnoklassniki.png" width="30"
+                                                                    height="30" alt=""/></a></li>
+            <li><a class="social-icon social-icon-vk" href="#"><img src="img/vk.png" width="30" height="30"
+                                                                    alt=""/></a></li>
+            <li><a class="social-icon social-icon-p" href="#"><img src="img/Pinterest.png" width="30"
+                                                                   height="30" alt=""/></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <span class="rights">© 2003–2016  «Cook it!» —все права защищены</span>
+</footer>
+
+
+<!--&lt;!&ndash; jQuery (necessary for Bootstrap's JavaScript plugins) &ndash;&gt; -->
+<!--<script src="js/jquery-1.11.3.min.js"></script> -->
+
+<!--&lt;!&ndash; Include all compiled plugins (below), or include individual files as needed &ndash;&gt; -->
+<!--<script src="js/bootstrap.js"></script>-->
+</body>
+</html>

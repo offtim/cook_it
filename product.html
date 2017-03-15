@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Продукты-Cook it!</title>
+
+<!-- Bootstrap -->
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+
+<!-- HTML5 shim and Respond.js for IE8 suspport of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<header>
+  <nav class="navbar navbar-default menu" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle center-btn" data-toggle="collapse" data-target="#bs-navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        <a class="logo" href="#"><img src="img/logo_cook it2.png" height="75" width="105"></a> </div>
+      <div class="navbar-collapse collapse clear navbar-right center-nav" id="bs-navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li class="dropdown" style="font-weight: 700; color: #000;"> <a class="dropdown-toggle" href="index.html">главная</a></li>
+          <li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="recipes.html">рецепты</a>
+            <ul class="dropdown-menu recipes-drop">
+              <li><a href="#">Птица</a></li>
+              <li><a href="#">Рыба</a></li>
+              <li><a href="#">Мясо</a></li>
+              <li><a href="#">Быстрые</a></li>
+              <li><a href="#">Мультиварка</a></li>
+              <li><a href="#">Низкокалорийные</a></li>
+              <li><a href="#">Вегетарианские</a></li>
+              <li><a href="#">Праздник</a></li>
+              <li><a href="#">Выпечка</a></li>
+              <li><a href="#">Десерты и напитки</a></li>
+              <li><a href="video-recipe.html">Видео-рецепты</a></li>
+              <li><a href="find_recipes.html">Найти рецепт</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="product.html">продукты</a>
+            <ul class="dropdown-menu">
+              <li><a href="#">от А до Я</a></li>
+              <li><a href="#">Первая проба</a></li>
+              <li><a href="#">Как выбирать</a></li>
+              <li><a href="#">Как приготовить</a></li>
+              <li><a href="#">Полезные продукты</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="health.html">здоровье</a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Рецепты ПП</a></li>
+              <li><a href="#">Диеты</a></li>
+              <li><a href="#">Красота</a></li>
+              <li><a href="#">Фитнес</a></li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span
+                  class="glyphicon glyphicon-user"></span> <span class="caret"></span></a>
+            <ul class="dropdown-menu user">
+              <li>
+                <div class="login clearfix">
+                  <form name="login-form">
+                    <input class="login-focus" type="text" name="login" placeholder="Электронная почта">
+                    <input class="login-focus" type="password" name="password" placeholder="Пароль">
+                    <button class="btn account-btn" type="submit" name="login-form">Войти</button>
+                    <div class="form clearfix"> <a  href="#">Забыли пароль?</a> <a  href="#">Новая регистрация</a> </div>
+                    <div class="social-block">
+                      <ul>
+                        <li><a class="social-icon social-icon-f" href="#"><img src="img/facebook.png" width="30" height="30" alt=""/></a></li>
+                        <li><a class="social-icon social-icon-tw" href="#"><img src="img/tw.png" width="30" height="30" alt=""/></a></li>
+                        <li><a class="social-icon social-icon-ok" href="#"><img src="img/odnoklassniki.png" width="30" height="30" alt=""/></a></li>
+                        <li><a class="social-icon social-icon-vk" href="#"><img src="img/vk.png" width="30" height="30" alt=""/></a></li>
+                        <li><a class="social-icon social-icon-p" href="#"><img src="img/Pinterest.png" width="30" height="30" alt=""/></a></li>
+                      </ul>
+                    </div>
+                  </form>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span
+                  class="glyphicon glyphicon-search"></span> <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li class="search-drop">
+                <form>
+                  <input class="search-form" type="text" name="search" placeholder=" Что ищем?">
+                </form>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <!--/.nav-collapse -->
+    </div>
+    <!--/.container -->
+  </nav>
+</header>
+<div class="container">
+  <div class="row">
+    <ol class="breadcrumb">
+      <li><a href="#">Главная</a></li>
+      <li class="active">Продукты</li>
+    </ol>
+         <div class="col-md-12 name-of-block">
+      <h1 class="text-center">Продукты</h1>
+    </div>
+  </div>
+  
+  <div class="row">
+  <!-- <div class="col-xs-12 col-md-8"> -->
+    <div class="col-sm-8 blog-main">
+    <div class="thumbnail title clearfix">
+    <div class="img-title"><img src="img/butter.jpg" width="500" alt=""/></div>
+       <div class="col-md-12 search ">
+         <button class="btn center-block btn-product"> как выбирать </button>
+       </div>
+      <h2 class="name-title-product">Сливочное масло: какое лучше и как выбрать</h2>
+      <p class="text-title-product">Поскольку в магазине невозможно дегустировать продукты, мы можем иметь дело лишь с информацией, указанной на упаковке. В данном случае мы доверяем производителю, а окончательное «тестирование» продукта проводится уже в домашних условиях.</p>  
+      <p class="text-title-product"> Обязательно обращайте внимание на ГОСТ — при этом надписи «сделано по ГОСТу» недостаточно, поскольку спреды и маргарины также могут производиться по государственным стандартам. ГОСТ сливочного масла — Р 52969-2008, однако вы можете увидеть и другие цифры, например Р 52253-2004. Последний номер свидетельствует о том, что вы держите в руках настоящее вологодское масло, которое в Вологодской области выпускают только три завода. Кроме того приказом Федерального агентства по техническому регулированию и метрологии от 22 ноября 2013 г. N 2134-ст ещё один межгосударственный стандарт ГОСТ 32261-2013 введен в действие в качестве национального стандарта Российской Федерации с 1 июля 2015 г. (прим.ред. 02.02.2016 г.).</p>
+        <p class="text-title-product">Запомните, что ГОСТ маргарина — Р 52178-2003, и даже если на упаковке написано «сливочное масло», не верьте своим глазам! Впрочем, некоторые виды качественного сливочного масла производятся не по ГОСТу, а по ТУ — техническим условиям, поэтому следует обращать внимание и на состав.
+        <hr class="title-product"></p>
+           <div class="tag">
+      <a class="active-tag" href="#">как выбирать</a>
+      <a href="#">продукты</a>
+      <a href="#">масло</a>
+       </div>
+   
+    
+       <div class="social-block">
+    <ul>
+    <li><a class="social-icon social-icon-f" href="#"><img src="img/facebook.png" width="30" height="30" alt=""/></a></li>
+    <li><a class="social-icon social-icon-tw" href="#"><img src="img/tw.png" width="30" height="30" alt=""/></a></li>
+    <li><a class="social-icon social-icon-ok" href="#"><img src="img/odnoklassniki.png" width="30" height="30" alt=""/></a></li>
+    <li><a class="social-icon social-icon-vk" href="#"><img src="img/vk.png" width="30" height="30" alt=""/></a></li>
+    <li><a class="social-icon social-icon-p" href="#"><img src="img/Pinterest.png" width="30" height="30" alt=""/></a></li>
+    </ul>
+    <span>Рассказать друзьям</span></div>    
+        
+     </div>
+
+
+  </div>
+   <!--  <div class="col-sm-6 col-md-4"> -->
+  <div class="col-sm-4 blog-sidebar">
+  <a href="razdel1.html">
+      <div class="thumbnail razdel">
+        <div class="icon-img">
+          <button class="btn center-block btn-product-razdel">от А до Я </button>
+         </div>
+          <p>Рамбутан</p>
+      </div>
+      </a> 
+  
+  </div>
+    <div class="col-sm-6 col-md-4">
+  <a href="razdel1.html">
+      <div class="thumbnail razdel2">
+        <div class="icon-img">
+          <button class="btn center-block btn-product-razdel">как выбирать</button>
+         </div>
+        <img src="img/olivella.jpg" width="414" height="345" alt=""/> 
+        <h2> Оливковое масло</h2>      
+          <p class="how-to-choose">Что надо знать при выборе оливкового масла</p>
+      </div>
+      </a> 
+  
+  </div>
+    <div class="col-sm-6 col-md-4">
+  <a href="razdel1.html">
+      <div class="thumbnail razdel2">
+        <div class="icon-img">
+          <button class="btn center-block btn-product-razdel">перая проба</button>
+         </div>
+        <img src="img/cucamelon.jpg" width="410" height="341" alt=""/>
+     
+          <p class="how-to-choose">Мексиканский огурец</p>
+      </div>
+      </a> 
+  
+  </div>
+  
+  </div>
+    <div class="row">
+    <div class="col-sm-8 blog-main">
+    <div class="thumbnail title clearfix">
+      <div class="img-title"><img src="img/pumpkin-oil.jpg"  alt=""/></div>
+       <div class="col-md-12 search ">
+         <button class="btn center-block btn-product">полезные продукты</button>
+       </div>
+      <h2 class="name-title-product">Тыквенные семечки</h2>
+      <p class="text-title-product">Тыквенные семечки являются хорошим источником целого ряда питательных веществ, витаминов и минералов и обладают множеством полезных свойств. Они богаты магнием, марганцем, фосфором, железом, медью, цинком, калием, кальцием. Также тыквенные семечки содержат витамины B1, B2, B3, B6, A, K, фолиевую и пантотеновую кислоту. В основном тыквенные семечки употребляют в пищу поджаренными в качестве закуски, но они имеют наибольшую питательную ценность, когда употребляются в сыром виде. Также семечки тыквы могут быть использованы в различных рецептах в качестве замены орехов или семечек подсолнечника. Они могут быть добавлены в обжаренные овощи, зеленые салаты или могут быть измельчены и добавлены в супы, каши.</p>
+      <p class="text-title-product"> <span>Полезные свойства</span> тыквенных семечек Пара горстей тыквенных семечек обеспечивают половину суточной нормы потребления марганца и магния и больше четверти нормы железа. Они обеспечивают значительное количество меди, цинка и белка. Семечки тыквы также содержат полиненасыщенные жирные кислоты омега-3 и омега-6.</p>
+      <p class="text-title-product"> <span> Прочность костей</span> Тыквенные семечки полезны для здоровья костей. Они содержат большое количество цинка, который повышает плотность костной ткани и защищает организм от развития остеопороза. Цинк также укрепляет иммунную систему и помогает процессу заживления травм. Дефицит цинка может привести к выпадению волос, замедлению роста у детей, потере веса и аппетита.</p>
+      <p class="text-title-product"> Магний играет важную роль в формировании крепких зубов и костей, так как помогает организму усваивать кальций. Он также стабилизирует сердечный ритм и поддерживает нормальную работу мышц. Магний вместе с цинком, фосфором и кальцием, также содержащимися в тыквенных семечках, полезны в поддержании общей прочности костей.</p>
+      <p class="text-title-product"> <span>Камни в почках</span> Тыквенные семечки помогают предотвратить образование наиболее распространенного типа камней в почках – камней оксалата кальция. Семечки тыквы не только снижают уровень веществ, способствующих образованию камней в моче, но и повышают уровень соединений, препятствующих их образованию.
+        <hr class="title-product"></p>
+           <div class="tag">
+      <a class="active-tag" href="#">как выбирать</a>
+      <a href="#">продукты</a>
+      <a href="#">семена</a>
+       </div>
+   
+    
+       <div class="social-block">
+    <ul>
+    <li><a class="social-icon social-icon-f" href="#"><img src="img/facebook.png" width="30" height="30" alt=""/></a></li>
+    <li><a class="social-icon social-icon-tw" href="#"><img src="img/tw.png" width="30" height="30" alt=""/></a></li>
+    <li><a class="social-icon social-icon-ok" href="#"><img src="img/odnoklassniki.png" width="30" height="30" alt=""/></a></li>
+    <li><a class="social-icon social-icon-vk" href="#"><img src="img/vk.png" width="30" height="30" alt=""/></a></li>
+    <li><a class="social-icon social-icon-p" href="#"><img src="img/Pinterest.png" width="30" height="30" alt=""/></a></li>
+    </ul>
+    <span>Рассказать друзьям</span></div>    
+        
+     </div>
+
+
+  </div>
+    <div class="col-sm-6 col-md-4">
+  <a href="razdel1.html">
+      <div class="thumbnail razdel2">
+        <div class="icon-img">
+          <button class="btn center-block btn-product-razdel">перая проба</button>
+         </div>
+        <img src="img/nut1.jpg" width="360" height="300" alt=""/>
+<p class="how-to-choose">Турецкий горох (нут)</p>
+      </div>
+      </a> 
+  
+  </div>
+    <div class="col-sm-6 col-md-4">
+  <a href="razdel1.html">
+      <div class="thumbnail razdel2">
+        <div class="icon-img">
+          <button class="btn center-block btn-product-razdel">как приготовить</button>
+         </div>
+        <img src="img/blyuda-iz-indejk.jpg" width="360" height="300" alt=""/>
+<p class="how-to-choose">Индейка, запеченная с картофелем </p>
+      </div>
+      </a> 
+  
+  </div>
+    <div class="col-sm-6 col-md-4">
+  <a href="razdel1.html">
+      <div class="thumbnail razdel2">
+        <div class="icon-img">
+          <button class="btn center-block btn-product-razdel">полезные продукты</button>
+         </div>
+        <img src="img/klubnika-1-1.jpeg" width="360" height="300" alt=""/>
+<p class="how-to-choose">12 фактов о клубнике, которых вы не знали</p>
+      </div>
+      </a> 
+  
+  </div>
+  
+  </div>
+  <div class="row">
+    <div class="col-md-4 ">
+      <ul class="pagination main">
+        <li class="disabled"><a href="#">«</a></li>
+        <li class="active"><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li><a href="#">»</a></li>
+      </ul>
+    </div>
+  </div>
+
+    <footer>
+      <div class="container">
+        <div class="col-sm-6 col-md-4">
+          <div class="footer-logo">
+            <img src="img/logo_cook%20it2.png" alt="">
+          </div>
+          <div class="f-text">
+            <p>Здесь вы найдете множество новых кулинарных идей, станете автором собственной Кулинарной книги, встретите друзей-единомышленников и сможете поболтать обо всемна свете!</p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 middle-box">
+          <div class="f-nav">
+            <a href="index.html">ГЛАВНАЯ</a>
+            <a href="recipes.html">РЕЦЕПТЫ</a>
+            <a href="product.html">ПРОДУКТЫ</a>
+            <a href="health.html">ЗДОРОВЬЕ</a>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <div class="f-text-block">
+            Вы можете отправить нам письмо и следить за обновлениями в социальных ресурсах:
+
+            <div class="social-block">
+              <ul>
+                <li><a class="social-icon social-icon-f" href="#"><img src="img/facebook.png" width="30"
+                                                                       height="30" alt=""/></a></li>
+                <li><a class="social-icon social-icon-tw" href="#"><img src="img/tw.png" width="30" height="30"
+                                                                        alt=""/></a></li>
+                <li><a class="social-icon social-icon-ok" href="#"><img src="img/odnoklassniki.png" width="30"
+                                                                        height="30" alt=""/></a></li>
+                <li><a class="social-icon social-icon-vk" href="#"><img src="img/vk.png" width="30" height="30"
+                                                                        alt=""/></a></li>
+                <li><a class="social-icon social-icon-p" href="#"><img src="img/Pinterest.png" width="30"
+                                                                       height="30" alt=""/></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <span class="rights">© 2003–2016  «Cook it!» —все права защищены</span>
+    </footer>
+    <!--<script src="js/jquery-1.11.3.min.js"></script>-->
+    <!--&lt;!&ndash;<script src="js/bootstrap.js"></script> &ndash;&gt;-->
+    <!--<script src="js/script.js"></script>-->
+    <!--<script>-->
+</body>
+</html>
